@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mk.Workshop-Home</title>
+<link href="CSS/template.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+#HoverEffect {
+	margin-right: auto;
+	margin-left: auto;
+	width: 906px;
+}
+#RecentWork {
+	height: auto;
+	width: 100%;
+	
+	float:left;
+	overflow:hidden;
+}
+#RecentWork img {
+border: 3px solid #F2F2F2;
+}
+#indemo {
+float: left;
+width: 800%;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
+}
+#WordRecentWork {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFF;
+	width: 100%;
+	margin-top: 30px;
+	float: left;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js" language="javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="CSS/jquery.fancybox.css" />
+
+<script type="text/javascript" src="js/jquery.fancybox.js" language="javascript"></script>
+
+<script type="text/javascript" src="js/widgets.js" language="javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		
+		
+		
+		
+		
+		
+		
+		$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']")
+		
+		.fancybox(
+		{
+    	beforeShow: function () {
+            if (this.title) {
+                // New line
+                this.title += '<br />';
+                
+                // Add tweet button
+                this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + this.href + '">Tweet</a> ';
+                
+                // Add FaceBook like button
+                <!--this.title += '<iframe src="//www.facebook.com/plugins/like.php?href=' + this.href + '&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:23px;" allowTransparency="true"></iframe>';-->
+            }
+        },
+        afterShow: function() {
+            // Render tweet button
+            twttr.widgets.load();
+        },
+		
+		padding : 0,
+		openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	
+		
+    	
+		
+		
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		);
+	});
+</script>
+
+
+
+<style type="text/css">
+
+.fancybox-title iframe {
+    min-height: 30px;
+    vertical-align: middle;
+}
+​
+
+
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="whole">
+  <div id="logo"><img id="logoimg" name="Logo" src="Images/mklogo.png" /></div>
+  <div id="middle">
+    <div id="Left">
+      <p><a href="index.html">Mk.Workshop</a></p>
+      <div id="Menu">
+        <ul id="MenuBar1" class="MenuBarVertical">
+          <li><a class="MenuBarItemSubmenu" href="Portfolio/Gallery.html">Portfolio</a>
+            <ul>
+              <li><a href="Portfolio/Portrait.html">Portrait</a></li>
+              <li><a href="Portfolio/Scenery.html">Scenery</a></li>
+</ul>
+          </li>
+          <li><a href="Blog/Blog.html">Blog</a></li>
+          <li><a href="AffiliateProgram.html">Affliate Program</a></li>
+          <li><a href="Licensing.html">Licensing</a></li>
+          <li><a href="Services.html">Services</a>          </li>
+          <li><a href="ContactUs.html" id="MenuBottom">Contact Us</a></li>
+        </ul>
+        
+      </div>
+      <p>&nbsp;</p>
+    </div>
+    <div id="Right"><div id="HoverEffect"><iframe src="HoverSlideEffect.html" scrolling="no" width="906" height="476"></iframe></div></div>
+  </div>
+  
+  <div id="WordRecentWork">Recent Works:</div>
+  <div id="RecentWork"><div id="indemo">
+<div id="demo1">
+<a class="fancybox" title="wallpaper" href="Images/1.jpg"><img  src="Images/1.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/2.jpg"><img  src="Images/2.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/3.jpg"><img src="Images/3.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/4.jpg"><img src="Images/4.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/5.jpg"><img src="Images/5.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/6.jpg"><img src="Images/6.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/7.jpg"><img src="Images/7.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/8.jpg"><img src="Images/8.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/9.jpg"><img src="Images/9.jpg" border="0" height="154" /></a>
+<a class="fancybox" title="wallpaper" href="Images/10.jpg"><img src="Images/10.jpg" border="0" height="154" /></a>
+
+</div>
+<div id="demo2"></div>
+</div></div>
+
+<script>
+
+var speed=10;
+var tab=document.getElementById("RecentWork");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+
+</script>
+
+
+
+
+<div id="Footer">
+    <div id="FooterLeft">
+      <p>Use of Images <br />
+        All images are Creative Commons &amp; Non-Commercial</p>
+      <p>For Commercial Use <br />
+        Please contact us.</p>
+      <p>Feel Free to Use Our Images <br />
+        On your blogs or social networks, for the +1&rsquo;s, the thumbs up or simply for fun, but you must <br />
+        1. Give credit to Oscar Shi <br />
+        2. Link to <a href="http://www.mkworkshop.ca/" title="www.mkworkshop.ca">www.mkworkshop.ca</a></p>
+      <p>For more information about details and licensing rights, it&rsquo;s under our <a href="Licensing.html" >licensing tab</a>.</p>
+    </div>
+    <div id="FooterRight">
+    <!-- Lockerz Share BEGIN -->
+<div class="a2a_kit a2a_default_style">
+<a class="a2a_dd" href="http://www.mkworkshop.ca/">Share</a>
+<span class="a2a_divider"></span>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_myspace"></a>
+<a class="a2a_button_tumblr"></a>
+<a class="a2a_button_delicious"></a>
+<a class="a2a_button_email"></a>
+</div>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "16242d";
+a2a_config.color_border = "4f4f4f";
+a2a_config.color_link_text = "fdf2f2";
+a2a_config.color_link_text_hover = "8d8181";
+a2a_config.color_bg = "0F0F0F";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+</script>
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+<!-- Lockerz Share END -->
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

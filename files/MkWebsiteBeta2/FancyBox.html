@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js" language="javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="CSS/jquery.fancybox.css" />
+
+<script type="text/javascript" src="js/jquery.fancybox.js" language="javascript"></script>
+
+<script type="text/javascript" src="js/widgets.js" language="javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		(function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+		
+		
+		
+		
+		
+		
+		
+		$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']")
+		
+		.fancybox(
+		{
+    	beforeShow: function () {
+            if (this.title) {
+                // New line
+                this.title += '<br />';
+                
+                // Add tweet button
+                this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + this.href + '">Tweet</a> ';
+                
+                // Add FaceBook like button
+                <!--this.title += '<iframe src="//www.facebook.com/plugins/like.php?href=' + this.href + '&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:23px;" allowTransparency="true"></iframe>';-->
+            }
+        },
+        afterShow: function() {
+            // Render tweet button
+            twttr.widgets.load();
+        },
+		nextMethod : 'resizeIn',
+        nextSpeed  : 200,
+        prevMethod : false,
+		padding : 0,
+		openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	
+		
+    	
+		
+		
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		);
+	});
+</script>
+
+
+
+<style type="text/css">
+
+.fancybox-title iframe {
+    min-height: 30px;
+    vertical-align: middle;
+}
+img {
+	height: auto;
+	width: 100%;
+
+}
+.hidden {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}​
+</style>
+<link href="CSS/template.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="PhotoColumn">
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group1" href="Images/Portrait/6.jpg"><img src="Images/Portrait/6.jpg"/></a>
+    <div class="hidden">
+<a title="Portrait" rel="group1" href="Images/Portrait/3.jpg"><img src="Images/Portrait/3.jpg"/></a>
+
+<a title="Portrait" rel="group1" href="Images/Portrait/11.jpeg"><img src="Images/Portrait/11.jpeg"/></a>
+</div>​
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group3" href="Images/Portrait/11.jpeg"><img src="Images/Portrait/11.jpeg"/></a>
+    <div class="hidden">
+<a title="Portrait" rel="group3" href="Images/Portrait/6.jpg"><img src="Images/Portrait/6.jpg"/></a>
+
+<a title="Portrait" rel="group3" href="Images/Portrait/3.jpg"><img src="Images/Portrait/3.jpg"/></a>
+</div>​
+    </div>
+    <div class="PhotoCell">
+    
+    </div>
+    <div class="PhotoCell">
+    
+    </div>
+    <div class="PhotoCell">
+    
+    </div>
+</div>
+<div class="PhotoColumn">
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group2" href="Images/Portrait/3.jpg"><img src="Images/Portrait/3.jpg"/></a>
+    <div class="hidden">
+<a title="Portrait" rel="group2" href="Images/Portrait/11.jpeg"><img src="Images/Portrait/11.jpeg"/></a>
+
+<a title="Portrait" rel="group2" href="Images/Portrait/6.jpg"><img src="Images/Portrait/6.jpg"/></a>
+</div>​
+  </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

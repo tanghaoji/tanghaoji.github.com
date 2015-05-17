@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/webtemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Mk.Workshop-Gallery-Portrait</title>
+<!-- InstanceEndEditable -->
+<link href="../CSS/template.css" rel="stylesheet" type="text/css" />
+<link href="../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js" language="javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="../CSS/jquery.fancybox.css" />
+
+<script type="text/javascript" src="../js/jquery.fancybox.js" language="javascript"></script>
+
+<script type="text/javascript" src="../js/widgets.js" language="javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		(function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+		
+		
+		
+		
+		
+		
+		
+		$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif'],.various")
+		
+		.fancybox(
+		{
+    	beforeShow: function () {
+            if (this.title) {
+                // New line
+                this.title += '<br />';
+                
+                // Add tweet button
+                this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + this.href + '">Tweet</a> ';
+                
+                // Add FaceBook like button
+                <!--this.title += '<iframe src="//www.facebook.com/plugins/like.php?href=' + this.href + '&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:23px;" allowTransparency="true"></iframe>';-->
+            }
+        },
+        afterShow: function() {
+            // Render tweet button
+            twttr.widgets.load();
+        },
+		nextMethod : 'resizeIn',
+        nextSpeed  : 200,
+        prevMethod : false,
+		padding : 0,
+		openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	
+		
+    	
+		
+		
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		);
+		
+	});
+</script>
+
+
+
+<style type="text/css">
+
+.fancybox-title iframe {
+    min-height: 30px;
+    vertical-align: middle;
+}
+​
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="whole">
+  <div id="logo"><img name="Logo" id="logoimg" src="../Images/mklogo.png" /></div>
+  <div id="middle">
+    <div id="Left2">
+      <p><a href="../index.html">Mk.Workshop</a></p>
+      
+      <div id="Menu">
+        <ul id="MenuBar1" class="MenuBarVertical">
+          <li><a class="MenuBarItemSubmenu" href="Gallery.html">Portfolio</a>
+            <ul>
+              <li><a href="Portrait.html">Portrait</a></li>
+              <li><a href="Scenery.html">Scenery</a></li>
+</ul>
+          </li>
+          <li><a href="../Blog/Blog.html">Blog</a></li>
+          <li><a href="../AffiliateProgram.html">Affliate Program</a></li>
+          <li><a href="../Licensing.html">Licensing</a></li>
+          <li><a href="../Services.html">Services</a>          </li>
+          <li><a href="../ContactUs.html" id="MenuBottom">Contact Us</a></li>
+        </ul>
+        
+      </div>
+     
+      
+      <div id="WordRecentPhoto"><p>Recent Photos</p></div>
+      <div id="RecentPhoto">
+      <a title="Recent Added" href="../Images/1.jpg" ><img src="../Images/1.jpg" alt="" height="35" /></a>
+      <a title="Recent Added" href="../Images/3.jpg" ><img src="../Images/3.jpg" alt="" height="35" /></a>
+      <a title="Recent Added" href="../Images/5.jpg" ><img src="../Images/5.jpg" alt="" height="35" /></a>
+      <a title="Recent Added" href="../Images/7.jpg" ><img src="../Images/7.jpg" alt="" height="35" /></a>
+      <a title="Recent Added" href="../Images/9.jpg" ><img src="../Images/9.jpg" alt="" height="35" /></a>
+      
+      
+      
+      </div>
+    </div>
+    <div id="Right"><!-- InstanceBeginEditable name="EditRegion3" -->
+    <div class="Row">&nbsp;&nbsp; <a href="Gallery.html">Portforlio</a>&gt;&gt;Portrait</div>
+	<div class="Row">
+    <div class="PhotoColumn">
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/6.jpg"><img src="../Images/Portrait/6.jpg"/></a>
+    
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/11.jpeg"><img src="../Images/Portrait/11.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/8.jpeg"><img src="../Images/Portrait/8.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/13.jpeg"><img src="../Images/Portrait/13.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    
+    </div>
+    </div>
+    <div class="PhotoColumn">
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/3.jpg"><img src="../Images/Portrait/3.jpg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/4.jpg"><img src="../Images/Portrait/4.jpg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/15.jpeg"><img src="../Images/Portrait/15.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/12.jpg"><img src="../Images/Portrait/12.jpg"/></a>
+    </div>
+    <div class="PhotoCell">
+    
+    </div>
+    </div>
+    <div class="PhotoColumn">
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/1.jpeg"><img src="../Images/Portrait/1.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/7.jpeg"><img src="../Images/Portrait/7.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/16.jpeg"><img src="../Images/Portrait/16.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/9.jpeg"><img src="../Images/Portrait/9.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    
+    </div>
+    </div>
+    <div class="PhotoColumn">
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/5.jpg"><img src="../Images/Portrait/5.jpg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/2.jpg"><img src="../Images/Portrait/2.jpg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/14.jpeg"><img src="../Images/Portrait/14.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    <a title="Portrait" rel="group" href="../Images/Portrait/10.jpeg"><img src="../Images/Portrait/10.jpeg"/></a>
+    </div>
+    <div class="PhotoCell">
+    
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    </div>
+	<div class="Row">
+     
+    
+    </div><!-- InstanceEndEditable --></div>
+  </div>
+  
+  <div id="Footer">
+    <div id="FooterLeft">
+      <p>Use of Images <br />
+        All images are Creative Commons &amp; Non-Commercial</p>
+      <p>For Commercial Use <br />
+        Please contact us.</p>
+      <p>Feel Free to Use Our Images <br />
+        On your blogs or social networks, for the +1&rsquo;s, the thumbs up or simply for fun, but you must <br />
+        1. Give credit to Oscar Shi <br />
+        2. Link to <a href="http://www.mkworkshop.ca/" title="www.mkworkshop.ca">www.mkworkshop.ca</a></p>
+      <p>For more information about details and licensing rights, it&rsquo;s under our <a href="../Licensing.html" >licensing tab</a>.</p>
+    </div>
+    <div id="FooterRight">
+    <!-- Lockerz Share BEGIN -->
+<div class="a2a_kit a2a_default_style">
+<a class="a2a_dd" href="http://www.mkworkshop.ca/">Share</a>
+<span class="a2a_divider"></span>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_myspace"></a>
+<a class="a2a_button_tumblr"></a>
+<a class="a2a_button_delicious"></a>
+<a class="a2a_button_email"></a>
+</div>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "16242d";
+a2a_config.color_border = "4f4f4f";
+a2a_config.color_link_text = "fdf2f2";
+a2a_config.color_link_text_hover = "8d8181";
+a2a_config.color_bg = "0F0F0F";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+</script>
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+<!-- Lockerz Share END -->
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+<!-- InstanceEnd --></html>
