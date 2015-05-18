@@ -561,7 +561,7 @@
 			position: relative;
 			display: inline-block;
 			/*background: #df7366;*/
-			background-image:url(../images/me.jpg);
+			/*background-image:url(../images/me.jpg);*/
 			color: #fff;
 			text-align: center;
 			border-radius: 0.5em;
@@ -798,8 +798,9 @@
 			
 		#header #resumebutton
 		{
-			margin-top:1.5em;
-			font-size:36px;
+	margin-top: 1.5em;
+	font-size: 2em;
+	
 		}
 
 /*********************************************************************************/
